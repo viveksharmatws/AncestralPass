@@ -12,13 +12,15 @@ const RelationDashBar = () => {
       <div className=" dark:border-gray-400/20 py-3 container">
         <div className="mx-auto container ">
           <div className="flex gap-2 ">
-            {RelationDash.map((item, index) => (
+            {RelationDash.map((x, index) => (
               <PlanButton
                 key={index}
-                href={item.route}
-                label={item.label}
+                href={x.route}
+                label={x.label}
+                showPlusCircle={x.showPlusCircle}
+                isActive
                 className={cn(
-                  pathname === item.route
+                  pathname === x.route
                     ? "bg-[#565E6D] dark:text-white text-white "
                     : "",
                   "justify-start"

@@ -20,7 +20,7 @@ const ReSelectbox = ({ data }) => {
         </SelectTrigger>
         <SelectContent className={cn("w-full ", "w-[300px] bg-white ")}>
           {Array.map((item) => (
-            <SelectItem key={item.value} value={item.value}>{item.name}</SelectItem>
+            <SelectItem value={item.value}>{item.name}</SelectItem>
           ))}
         </SelectContent>
       </Select>
