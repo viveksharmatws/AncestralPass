@@ -15,14 +15,14 @@ const initialNodes = [
     id: 'horizontal-2',
     sourcePosition: 'right',
     targetPosition: 'left',
-    data: { label: 'A Node' },
+    data: { label: 'Vito Corleano' },
     position: { x: 250, y: 0 },
   },
   {
     id: 'horizontal-3',
     sourcePosition: 'right',
     targetPosition: 'left',
-    data: { label: 'Node 3' },
+    data: { label: 'Carmela Kowasaki' },
     position: { x: 250, y: 160 },
   },
   {
@@ -46,20 +46,7 @@ const initialNodes = [
     data: { label: 'Node 6' },
     position: { x: 500, y: 230 },
   },
-  {
-    id: 'horizontal-7',
-    sourcePosition: 'right',
-    targetPosition: 'left',
-    data: { label: 'Node 7' },
-    position: { x: 750, y: 50 },
-  },
-  {
-    id: 'horizontal-8',
-    sourcePosition: 'right',
-    targetPosition: 'left',
-    data: { label: 'Node 8' },
-    position: { x: 750, y: 300 },
-  },
+
 ];
 
 const initialEdges = [
@@ -98,20 +85,7 @@ const initialEdges = [
     target: 'horizontal-6',
     animated: true,
   },
-  {
-    id: 'horizontal-e5-7',
-    source: 'horizontal-5',
-    type: 'smoothstep',
-    target: 'horizontal-7',
-    animated: true,
-  },
-  {
-    id: 'horizontal-e6-8',
-    source: 'horizontal-5',
-    type: 'smoothstep',
-    target: 'horizontal-8',
-    animated: true,
-  },
+ 
 ];
 
 const HorizontalFamilyTree = () => {

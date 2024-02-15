@@ -9,14 +9,15 @@ import {
 } from "@/components/ui/resizable";
 import { AlertCircle } from "lucide-react";
 import HorizontalFamilytree from "./components/HorizontalFamilytree";
+import DashboardTable from "./components/DashboardTable";
 
 const page = () => {
   return (
     <>
-      <div >
+      <div>
         <ResizablePanelGroup direction="horizontal">
           <ResizablePanel defaultSize={100} className="w-full">
-            <div className="">
+            <div className=" mr-6">
               <div className="p-1 border">
                 <h2 className="text-2xl font-semibold my-5 text-black dark:text-white">
                   Next Page
@@ -29,7 +30,7 @@ const page = () => {
                     </Button>
                   </div>
                   <div>
-                    <div className="bg-[#F3F4F6]  rounded-3xl p-2 flex">
+                    <div className="bg-[#F3F4F6] text-sm rounded-3xl px-[10px] py-[4px] flex">
                       <Timer className="mr-2" />
                       15 Minutes
                     </div>
@@ -45,9 +46,11 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="p-1">
-              <h2 className="text-2xl mt-3 font-bold">Citizenship Plans</h2>
-
+            <div className="p-1 mr-5">
+              <h2 className="text-2xl mt-3 font-bold mb-5">Citizenship Plans</h2>
+              <div className="mb-5">
+                <DashboardTable />
+              </div>
               <div>
                 <Button className="p-2 border border-slate-900/80 bg-dark dark:bg-white">
                   New Plan

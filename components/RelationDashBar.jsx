@@ -20,7 +20,7 @@ const RelationDashBar = () => {
                 showPlusCircle={x.showPlusCircle}
                 isActive
                 className={cn(
-                  pathname === x.route
+                  pathname === x.route || pathname === "/"
                     ? "bg-[#565E6D] dark:text-white text-white "
                     : "",
                   "justify-start"

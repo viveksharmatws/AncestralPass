@@ -22,15 +22,14 @@ const Order = () => {
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel>
           <div>
-            <h2 className="font-bold text-2xl p-5 dark:text-white text-black ">
+            <h2 className="font-bold text-2xl p-5 pb-2 dark:text-white text-black ">
               Order Records
             </h2>
           </div>
-          <div className="p-5">
+          <div className="p-3">
             <FamilyRecordtable handleButtonClick={handleComponentChange} />
           </div>
         </ResizablePanel>
-
         <ResizableHandle />
         <ResizablePanel>
             {activeComponent === "FamilyTree" && <FamilyTreeOrderRec />}

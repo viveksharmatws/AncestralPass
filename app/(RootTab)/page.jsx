@@ -6,6 +6,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { ArrowRightCircle } from 'lucide-react';
 import FamilytreeGlobal from "@/components/FamilyTreeGlobal";
 
 const page = () => {
@@ -57,7 +58,11 @@ const page = () => {
                       "bg-gray-500 text-white hover:bg-gray-950 text-sm mt-5"
                     )}
                   >
+                    <div className="px-3 flex gap-2">
+
                     <Link href="/orderrecords">Confirm Eligibiliy</Link>
+                    <ArrowRightCircle width={20} height={20} />
+                    </div>
                   </Button>
                 </div>
               </div>
