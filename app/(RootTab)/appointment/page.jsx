@@ -28,7 +28,7 @@ const page = () => {
                 </div>
                 <div className="px-7 pb-4">
                   <h2 className="text-[16px] font-bold">Ancestor</h2>
-                  <p className="text-sm">Maria Sassu ( Dad's Mom )</p>
+                  <p className="text-sm">Maria Sassu ( Dad Mom )</p>
                 </div>
                 <div className="px-7">
                   <h2 className="text-[16px] font-bold">Apply from</h2>

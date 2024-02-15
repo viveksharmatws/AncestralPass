@@ -177,7 +177,7 @@ const initEdges = [
 ];
 
 const FamilytreeGlobal = () => {
-  const [nodes, setNodes, onNodesChange] = useNodesState(initNodes);
+  const [nodes, onNodesChange] = useNodesState(initNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initEdges);
 
   const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), []);

@@ -10,7 +10,7 @@ import Birth from "./components/Birth";
 import FamilyRecordtable from "./components/FamilyRecordtable";
 import FamilyTreeOrderRec from "./components/FamilyTreeOrderRec";
 
-const page = () => {
+const Order = () => {
   const [activeComponent, setActiveComponent] = useState("FamilyTree");
 
   const handleComponentChange = (componentName) => {
@@ -42,4 +42,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Order;

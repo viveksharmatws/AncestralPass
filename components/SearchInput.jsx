@@ -121,6 +121,7 @@ function Searchbar({ ...props }) {
           <CommandGroup heading="Theme">
             {themes.map((item) => (
               <CommandItem
+              key={item.value}
                 onSelect={() =>
                   runCommand(() =>
                     setMode(() => {
