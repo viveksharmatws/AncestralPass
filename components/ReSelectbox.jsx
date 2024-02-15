@@ -19,8 +19,8 @@ const ReSelectbox = ({ data }) => {
           <SelectValue placeholder={filterKey} />
         </SelectTrigger>
         <SelectContent className={cn("w-full ", "w-[300px] bg-white ")}>
-          {Array.map((item) => (
-            <SelectItem value={item.value}>{item.name}</SelectItem>
+          {Array.map((item, index) => (
+            <SelectItem key={index} value={item.value}>{item.name}</SelectItem>
           ))}
         </SelectContent>
       </Select>
